@@ -20,8 +20,8 @@ module Crawler
       click_button "ログイン"
     end
     
+    # 入力履歴の件数を確認する
     def count
-      # 入力履歴の件数を確認する
       visit("https://zaim.net/money")
       @count = 0
       doc = all(:xpath, '//*[@id="root"]/div/div[2]/div[3]/div[2]/div[2]/div/div')
@@ -30,6 +30,7 @@ module Crawler
       end
     end
 
+    # 入力履歴を抽出する
     def extraction
       # 入力履歴の件数を表示する
       puts "*********************"
