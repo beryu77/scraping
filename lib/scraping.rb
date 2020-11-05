@@ -14,9 +14,9 @@ module Crawler
     def login
       visit("https://auth.zaim.net")
       fill_in "data[User][email]",
-        :with => "beryu888@gmail.com"
+        :with => ""
       fill_in "data[User][password]",
-        :with => "GidgfRdWofFD"
+        :with => ""
       click_button "ログイン"
     end
     
