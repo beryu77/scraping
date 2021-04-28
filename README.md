@@ -1,4 +1,4 @@
-# zaim_scraping
+# scraping
 
 ## 環境・主要Gem
 * ruby 2.6.5
